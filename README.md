@@ -1,12 +1,5 @@
 # Chat em Tempo Real
 
-Aplicação full-stack de chat com salas de conversa, mensagens instantâneas e lista de usuários online.
-
-## Tecnologia
-
-- **Backend:** Java 17 + Spring Boot 3.2 + WebSocket (STOMP)
-- **Frontend:** HTML5 + CSS3 + JavaScript (SockJS + STOMP)
-
 ## Funcionalidades
 
 - Múltiplas salas de chat
