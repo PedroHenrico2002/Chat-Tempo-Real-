@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat em Tempo Real</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+</head>
+<body>
+    <div id="login-page">
+        <div class="login-container">
+            <h1>Chat em Tempo Real</h1>
+            <input type="text" id="username-input" placeholder="Digite seu nome de usuário..." maxlength="20">
+            <button id="login-btn">Entrar</button>
+        </div>
+    </div>
+
+    <div id="chat-page" class="hidden">
+        <div class="chat-container">
+            <aside class="sidebar">
+                <h2>Salas</h2>
+                <ul id="room-list"></ul>
+                <div class="create-room">
+                    <input type="text" id="new-room-input" placeholder="Nova sala...">
+                    <button id="create-room-btn">Criar</button>
+                </div>
+            </aside>
+            <main class="chat-main">
+                <header class="chat-header">
+                    <h2 id="current-room">Geral</h2>
+                    <span id="online-count">0 online</span>
+                </header>
+                <div id="messages" class="messages"></div>
+                <div class="input-area">
+                    <input type="text" id="message-input" placeholder="Digite uma mensagem...">
+                    <button id="send-btn">Enviar</button>
+                </div>
+            </main>
+            <aside class="users-sidebar">
+                <h3>Online</h3>
+                <ul id="users-list"></ul>
+            </aside>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
